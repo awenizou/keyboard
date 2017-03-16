@@ -1,0 +1,117 @@
+.cmb-number-keyboard {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    >.bd {
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+       // background: url(./img/1x/cmb_kb_bg1@1x.png) no-repeat;
+       // background-size: 100% 100%;
+       background-image:-webkit-linear-gradient(to bottom, #8c8c8c, #4e4e4e); 
+       background-image:linear-gradient(to bottom, #8c8c8c, #4e4e4e); 
+        >.fir_col {
+            width: 100%;
+            height: 35px;
+            position: relative;
+            text-align: center;
+            border-bottom: 1px solid rgb(112, 112, 112);
+            >.title {
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            >.btn_done {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 64px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                font-size: 14px;
+                color: rgb(240, 240, 240);
+            }
+        }
+        >.wrapper {
+            margin-right: -1px;
+            margin-top: -1px;
+            height: calc(100% - 1px);
+            overflow: hidden;
+            >.cell {
+                position: relative;
+                box-sizing: border-box;
+                font-size: 24px;
+                height: 50px;
+                text-align: center;
+                color: #fff;
+                float: left;
+                width: 33.33%;
+                border: 1px solid rgb(112, 112, 112);
+                border-width: 0 1px 1px 0;
+                background: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                >img {
+                    position: absolute;
+                    width: 30px;
+                    left: 50%;
+                    top: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+                &:active {
+                    background: #1e7dc8;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &[data-theme=gray] {
+                    background: rgb(123, 123, 123);
+                    font-size: 18px;
+                    &:active {
+                        background: #1e7dc8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.icon_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.icon {
+    background: url(./img/1x/cmb_kb_bg2.png) no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.title_content {
+    margin-left: 2px;
+    font-size: 14px;
+    color: rgb(162, 162, 162);
+}
+
+
